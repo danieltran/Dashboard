@@ -1,0 +1,159 @@
+// Place all the styles related to the dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+    body
+
+    {
+
+      font-family: 'Open Sans', sans-serif;
+
+      font-size: 0.8em;
+
+      background-image: image-url('kuji.png');
+
+      margin: 10px;
+
+    }
+
+    
+
+    
+
+    input
+
+    {
+
+      font-family: 'Open Sans', sans-serif;
+
+    }
+
+    
+
+    h1, h2, h3, h4, h5
+
+    {
+
+      font-weight: 800;
+
+      padding-bottom: 10px;
+
+    }
+
+    
+
+    header h1
+
+    {
+
+      margin: 8px 0 0 6px;
+
+    }
+
+    
+
+    .panel
+
+    {
+
+      background-color: #fff;
+
+      -webkit-border-radius: 8px;
+
+      -moz-border-radius: 8px;
+
+      border-radius: 8px;
+
+      
+
+      -moz-box-shadow: inset 0 0 3px #888;
+
+      -webkit-box-shadow: inset 0 0 3px #888;
+
+      box-shadow: inner 0 0 3px #888;
+
+      padding: 15px;
+
+      margin-bottom: 10px;
+
+    }
+
+    
+
+    .links
+
+    {
+
+      list-style: none;
+
+      padding: 0;
+
+      margin: 0;
+
+    }
+
+    
+
+    .todo
+
+    {
+
+      list-style: none;
+
+      padding: 0;
+
+      margin: 0;
+
+    }
+
+    
+
+    .todo li
+
+    {
+
+      padding: 10px;
+
+    }
+
+    
+
+    .todo input[type="checkbox"]
+
+    {
+
+      margin: 0 15px 0 0;
+
+    }
+
+    
+
+    .big
+
+    {
+
+      font-size: 3em;
+
+      font-weight: 300;
+
+    }
+
+    
+
+    header
+
+    {
+
+      overflow: hidden;
+
+    }
+
+    
+
+    .right
+
+    {
+
+      float: right;
+
+    }
