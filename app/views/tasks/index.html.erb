@@ -1,29 +1,53 @@
-<h1>Listing tasks</h1>
+<div class="row-fluid">
+  <div class="btn-group">
+    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+      New
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Task</a></li>
+      <li><a href="#">Project</a></li>
+    </ul>
+  </div>
+</div>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Due date</th>
-    <th>List</th>
-    <th>Completed</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+&nbsp;
 
-<% @tasks.each do |task| %>
-  <tr>
-    <td><%= task.title %></td>
-    <td><%= task.due_date %></td>
-    <td><%= task.list_id %></td>
-    <td><%= task.completed %></td>
-    <td><%= link_to 'Show', task %></td>
-    <td><%= link_to 'Edit', edit_task_path(task) %></td>
-    <td><%= link_to 'Destroy', task, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+<div class="row-fluid">
+  <div class="span3">
+    <div class="panel">
+      <ul class="nav nav-list">
+        <li class="active">
+          <a href="#">Inbox</a>
+        </li>
+        <li class="nav-header">
+          Active Projects
+        </li>
+        <li>
+          <a href="#">Project 1</a>
+        </li>
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="#">Another Project</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-<br />
+  <div class="span6">
+    <div class="panel">
+      <h2>Inbox</h2>
 
-<%= link_to 'New Task', new_task_path %>
+      <input type="textbox" class="span5" /> <input type="button" value="Add task" class="btn" />
+
+      <ul class="todo">
+        <%= render @tasks %>
+      </ul>
+      </div>
+  </div>
+
+  <div class="span3">&nbsp;
+  </div>
+</div>
