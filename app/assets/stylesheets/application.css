@@ -10,6 +10,7 @@
  *
  *= require bootstrap
  *= require responsive
+ *= require kalendae
  *= require_self
  *= require_tree .
 */

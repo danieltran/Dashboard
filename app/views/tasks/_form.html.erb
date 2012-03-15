@@ -11,23 +11,8 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :due_date %><br />
-    <%= f.datetime_select :due_date %>
-  </div>
-  <div class="field">
-    <%= f.label :list_id %><br />
-    <%= f.number_field :list_id %>
-  </div>
-  <div class="field">
-    <%= f.label :completed %><br />
-    <%= f.check_box :completed %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= f.hidden_field :list_id %>
+  <%= f.text_field :title, class: "span8", placeholder: "Task" %>
+  <%= f.text_field :due_date, class: "span2 due_date", placeholder: "Due Date" %>
+  <%= f.submit "Add task", :disable_with => 'Add tasking...', class: "btn" %>
 <% end %>
