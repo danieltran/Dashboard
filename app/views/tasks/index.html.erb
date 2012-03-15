@@ -6,7 +6,7 @@
     </a>
     <ul class="dropdown-menu">
       <li><a href="#">Task</a></li>
-      <li><a href="#">Project</a></li>
+      <li><%= link_to 'Project', new_list_path %></li>
     </ul>
   </div>
 </div>
@@ -23,15 +23,11 @@
         <li class="nav-header">
           Active Projects
         </li>
-        <li>
-          <a href="#">Project 1</a>
-        </li>
-        <li>
-          <a href="#">Dashboard</a>
-        </li>
-        <li>
-          <a href="#">Another Project</a>
-        </li>
+        <% @lists.each do |list| %>
+          <li>
+            <a href="#"><%= list.title %></a>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>

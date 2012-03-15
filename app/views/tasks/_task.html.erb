@@ -1,7 +1,11 @@
 <li>
   <%= check_box :task, :completed %>
-  <%= task.title %> <%= task.due_date %> <%= task.completed %> <%= task.list_id %>
-  <%= link_to 'Show', task %>
-  <%= link_to 'Edit', edit_task_path(task) %>
-  <%= link_to 'Destroy', task, confirm: 'Are you sure?', method: :delete %>
+  <%= task.title %> 
+
+  <span class="pull-right">
+    <%= time_ago_in_words(task.due_date) %>
+    <%= link_to 'Show', task %>
+    <%= link_to 'Edit', edit_task_path(task) %>
+    <%= link_to 'Destroy', task, confirm: 'Are you sure?', method: :delete %>
+  </span>
 </li>
